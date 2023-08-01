@@ -3,7 +3,7 @@ const app = express();
 const port = 3000;
 
 app.set('view engine', 'ejs');
-app.use('/views', express.static("public"));
+app.use('/views', express.static("views"));
 
 app.get('/', (req, res) => {
     res.render('index');
