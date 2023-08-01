@@ -6,7 +6,7 @@ const port = 3000;
 // app.set('view engine', 'ejs');
 // app.use(express.static("views", { index: "true" }));
 app.use(express.static("views"));
-
+app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
     res.render('index'); // 'index' sesuai dengan nama file EJS (tanpa ekstensi .ejs)
