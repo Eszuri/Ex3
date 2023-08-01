@@ -5,7 +5,7 @@ const port = 3000;
 // Set EJS as the view engine
 // app.set('view engine', 'ejs');
 // app.use(express.static("views", { index: "true" }));
-app.use(express.static("views"));
+// app.use(express.static("views"));
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
